@@ -2,6 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import API, { graphqlOperation } from '@aws-amplify/api'
+import PubSub from '@aws-amplify/pubsub';
+//import { createTodo } from './graphql/mutations'
+
+import config from './aws-exports'
+API.configure(config)             // Configure Amplify
+PubSub.configure(config);
+
+
 function App() {
   return (
     <div className="App">
