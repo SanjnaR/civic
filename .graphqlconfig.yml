@@ -2,7 +2,7 @@ projects:
   civic:
     schemaPath: src/graphql/schema.json
     includes:
-      - src/graphql/database.js
+      - database.js
     excludes:
       - ./amplify/**
     extensions:
